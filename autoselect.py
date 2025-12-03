@@ -49,8 +49,8 @@ class AutoSelector:
     #             print("[+] 成功进入选课页面")
     #             return
 
-    #         print("… 未开放，0.4秒后重试")
-    #         time.sleep(0.4)
+    #         print("… 未开放，请稍后重试")
+    #         time.sleep(20)
 
     def enter_xk_page(self):
         print("[*] 寻找选课入口...")
@@ -58,7 +58,6 @@ class AutoSelector:
         while True:
             r = self.session.get(XKLC_LIST)
 
-            # ⭐ 写入到文件方便你用浏览器打开检查
             with open("debug_xk_page.html", "w", encoding="utf-8") as f:
                 f.write(r.text)
 
@@ -71,8 +70,8 @@ class AutoSelector:
                 print("[+] 成功进入选课页面")
                 return
 
-            print("… 未开放，0.4秒后重试")
-            time.sleep(0.4)
+            print("… 未开放，请稍后重试")
+            time.sleep(20)
 
     def try_select(self, url, index):
         cid = self.course_ids[index]
@@ -118,6 +117,6 @@ class AutoSelector:
                 else:
                     index += 1 
 
-                time.sleep(0.4)
+                time.sleep(20)
 
-        print("\n🎉 所有课程均已处理完毕！")
+        print("\n 所有课程均已处理完毕！")
