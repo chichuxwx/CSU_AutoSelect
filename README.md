@@ -2,8 +2,8 @@
 
 中南大学自动选课工具
 
-原始作者：@DavidHuang  
-更新：@chichuxwx
+原始作者：[@DavidHuang](https://github.com/CrazyDaveHDY)
+更新：[@chichuxwx](https://github.com/chichuxwx)
 
 本项目使用 Selenium 完成 CSU 统一认证登录，再将 Cookies 注入 requests，实现高速抢课。
 
@@ -39,18 +39,21 @@ edge://version/
 ```
 
 2. 查看浏览器版本（如 142.x.x）
-3. 前往官方下载对应版本 EdgeDriver：
+3. 前往[官方](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/)下载对应版本 EdgeDriver：
 
-https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
 
 4. 下载后将 `msedgedriver.exe` 放到项目目录  
 并在 login_edge.py 中设置EDGEDRIVER_PATH
 
-## 运行 首先修改config.ini，根据config中内容修改账号密码，以及填写要抢课的ID，下面展示了如何找到课程ID 按照提示输入学号，教务系统密码，课程 ID 后，进入项目根目录，命令行中运行
-console
-$ python3 main.py
+## 运行 
 
+首先修改config.ini，根据config中内容修改账号密码，以及填写要抢课的ID，下面展示了如何找到课程ID 
 
+按照提示输入学号，教务系统密码，课程 ID 后，进入项目根目录，命令行中运行
+
+```Shell
+ python3 main.py
+```
 
 ## 如何找到6位课程ID 
 
@@ -58,8 +61,12 @@ $ python3 main.py
 
 2.在查询页面按照时间查询，里面课表都有id 
 
-## 声明 因为每学期选课的包可能都会发生变化，当前代码仅能在上传时的学期抢课，不保证抢课成功 该程序仅保存账户密码在本地，不会危害到你的账户安全  
+## 声明 
 
-## 使用时注意不要对中南大学服务器造成太大负担，本程序仅做技术交流，一切后果使用者自负。
+因为每学期选课的包可能都会发生变化，当前代码仅能在上传时的学期抢课，不保证抢课成功 该程序仅保存账户密码在本地，不会危害到你的账户安全  
 
-## 许可协议 CSUAutoSelect [GPL-3.0 License](https://github.com/CrazyDaveHDY/CSUAutoSelect/blob/master/LICENSE)
+使用时注意不要对中南大学服务器造成太大负担，本程序仅做技术交流，一切后果使用者自负。
+
+## 许可协议 
+
+CSUAutoSelect [GPL-3.0 License](https://github.com/CrazyDaveHDY/CSUAutoSelect/blob/master/LICENSE)
