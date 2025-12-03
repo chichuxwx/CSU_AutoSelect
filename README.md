@@ -3,6 +3,7 @@
 中南大学自动选课工具
 
 原始作者：[@DavidHuang](https://github.com/CrazyDaveHDY)
+
 更新：[@chichuxwx](https://github.com/chichuxwx)
 
 本项目使用 Selenium 完成 CSU 统一认证登录，再将 Cookies 注入 requests，实现高速抢课。
