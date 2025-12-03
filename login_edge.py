@@ -54,7 +54,7 @@ def login_with_edge_offline(username, password):
     btn.click()
 
     print("[*] 已提交登录，等待跳转...")
-    time.sleep(3)
+    time.sleep(5)
     return driver
 
 
@@ -68,8 +68,8 @@ def export_cookie_session(driver):
 
     print("[*] 用 session 访问教务系统测试...")
     r = session.get(JWC_MAIN_URL)
-    print("状态码:", r.status_code)
-    print("页面前200字符：\n", r.text[:200])
+    # print("状态码:", r.status_code)
+    # print("页面前200字符：\n", r.text[:200])
 
     return session
 
@@ -78,5 +78,5 @@ if __name__ == "__main__":
     driver = login_with_edge_offline()
     session = export_cookie_session(driver)
 
-    print("\n🎉 离线版登录成功！接下来可以继续自动抢课。")
+    print("\n登录成功！")
     input("按回车退出...")
