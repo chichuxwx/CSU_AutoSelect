@@ -1,6 +1,6 @@
 # CSUAutoSelect-Selenium
 
-中南大学自动选课工具
+中南大学自动选课工具——教务系统更新后现已失效
 
 原始作者：[@DavidHuang](https://github.com/CrazyDaveHDY)
 
